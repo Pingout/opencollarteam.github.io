@@ -68,20 +68,20 @@ Two Example Config Entries:
 
 PoseName:Belt
 PoseAnim:cuff-belt2
-PoseChains:illac=lbelt~irlac=rbelt~iluac=bbelt~iruac=bbelt~bluac=bruac
+'PoseChains:illac=lbelt~irlac=rbelt~iluac=bbelt~iruac=bbelt~bluac=bruac'
 PoseRestrictions:touchall,showinv,viewnote,viewscript,viewtexture,edit
 PoseAge:5
 PoseGravity:0
 
 PoseName:Pinion
 PoseAnim:cuff-pinion
-PoseChains:bluac=bruac~bruac=bbelt~bbelt=bluac~fluac=fllac~fruac=frlac~bllac=lbelt~brlac=rbelt
+'PoseChains:bluac=bruac~bruac=bbelt~bbelt=bluac~fluac=fllac~fruac=frlac~bllac=lbelt~brlac=rbelt'
 PoseRestrictions:touchall,showinv,viewnote,viewscript,viewtexture,edit
 PoseAge:5
 PoseGravity:0
 
 PoseChain Config Specific Example:
-    rlac=llac~ruac=luac
+    'rlac=llac~ruac=luac'
     (This will spawn a chain to the lower left arm cuff from the lower right arm cuff and another chain to the left upper arm cuff from the right upper arm cuff. The second prim name is the end or target of the chain particles, the first prim name is the beginning or emitter of the chain particles)
     (see NamingGuide.md for a full list of possible chainpoints)
 
@@ -120,7 +120,7 @@ In order to see chains when a Pose of the Collar is running, you need to create 
 The syntax is as follows:
 
     [tower]
-    Chains = frlac=fllac~frulc=flulc~irulc=ilulc~irllc=illlc~rulc=rllc~lulc=lllc
+    'Chains = frlac=fllac~frulc=flulc~irulc=ilulc~irllc=illlc~rulc=rllc~lulc=lllc'
 
     Animation Name is bracketed
     Chain Configuration: The list of chain-points (see Attachment Poses)
